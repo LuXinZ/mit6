@@ -24,6 +24,14 @@ type ExampleReply struct {
 
 // Add your RPC definitions here.
 
+type SendArgs struct {
+	Filename string
+	N        int
+}
+type SendReply struct {
+	Filename string
+	N        int
+}
 
 // Cook up a unique-ish UNIX-domain socket name
 // in /var/tmp, for the coordinator.
